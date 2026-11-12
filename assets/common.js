@@ -1,4 +1,4 @@
-var CFG={formspree:'YOUR_FORM_ID',wa:'910000000000',to:'info@kavidhan.com'};
+var CFG={formspree:'YOUR_FORM_ID',wa:'919150938080',to:'info@kavidhan.com'};
 var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.getElementById('y').textContent=new Date().getFullYear();
 var t=document.querySelector('.tog'),m=document.getElementById('menu');
