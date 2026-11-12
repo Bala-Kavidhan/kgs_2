@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavidhan Global Solutions | Your Technology Partner</title>
+<meta name="description" content="Kavidhan Global Solutions (KDGS): digital, AI and connected-systems solutions that simplify work, enhance lives and create lasting value.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14102e;--bg:#0d0a26;--bg2:#15103a;--violet:#7c3aed;--violet-d:#4c1d95;--violet-l:#a78bfa;--gold:#f5b83d;--paper:#f6f4fc;--muted:#5d5880;--mutedd:#a9a3cc;--line:#e3def5;--lined:rgba(167,139,250,.22);
+--display:'Sora',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 var(--body);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.arrow::after{content:" \203A";font-weight:700}
+
+/* logo */
+.logo{display:inline-flex;flex-direction:column;line-height:1}
+.logo b{font:800 italic 30px/1 var(--display);letter-spacing:-.04em;background:linear-gradient(180deg,#c4b5fd,#7c3aed 60%,#4c1d95);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo i{font:700 8.5px/1 var(--display);letter-spacing:.18em;color:var(--violet);margin-top:5px;font-style:normal}
+
+/* top bar + nav */
+.util{background:var(--bg);color:var(--mutedd);font-size:13px}
+.util .wrap{display:flex;justify-content:flex-end;gap:24px;height:36px;align-items:center}
+.util a:hover{color:var(--gold)}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:40px;height:74px}
+.menu{display:flex;gap:6px;height:100%;flex:1}
+.menu>li{position:static;display:flex;align-items:center}
+.menu>li>a{padding:0 14px;height:100%;display:flex;align-items:center;font:600 15px var(--display);border-bottom:3px solid transparent}
+.menu>li:hover>a,.menu>li:focus-within>a{border-color:var(--violet);color:var(--violet-d)}
+.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:1px solid var(--line);box-shadow:0 24px 40px rgba(20,16,46,.12);display:none;padding:34px 0}
+.menu>li:hover .mega,.menu>li:focus-within .mega{display:block}
+.mega .wrap{display:grid;grid-template-columns:1.1fr 2fr;gap:48px}
+.mega h4{font:800 22px/1.2 var(--display);margin-bottom:8px}
+.mega p{color:var(--muted);font-size:15px}
+.mega ul{display:grid;grid-template-columns:1fr 1fr;gap:6px 32px;align-content:start}
+.mega li a{display:block;padding:8px 0;font-weight:500;border-bottom:1px solid var(--line)}
+.mega li a:hover{color:var(--violet)}
+.btn{display:inline-block;padding:13px 26px;font:700 15px var(--display);border-radius:2px;transition:.2s;cursor:pointer;border:0}
+.btn.gold{background:var(--gold);color:#1a1033}.btn.gold:hover{background:#ffd06b}
+.btn.vio{background:var(--violet);color:#fff}.btn.vio:hover{background:var(--violet-d)}
+.btn.ghost{border:1.5px solid #fff;color:#fff;background:none}.btn.ghost:hover{background:#fff;color:var(--ink)}
+.tog{display:none;margin-left:auto;background:none;border:1px solid var(--line);padding:8px 12px;font:600 14px var(--display);border-radius:4px}
+@media(max-width:980px){
+ .tog{display:block}.nav-cta{display:none}
+ .menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;height:auto;padding:8px 28px 20px;border-bottom:1px solid var(--line)}
+ .menu.open{display:flex}.menu>li{height:auto}.menu>li>a{padding:12px 0;height:auto;border:0}.mega{display:none!important}}
+
+/* hero */
+.hero{background:radial-gradient(70% 90% at 85% 20%,rgba(124,58,237,.55),transparent 70%),radial-gradient(40% 60% at 0% 100%,rgba(245,184,61,.12),transparent 70%),var(--bg);color:#fff;position:relative;overflow:hidden}
+.hero svg{position:absolute;right:-40px;top:0;height:100%;width:55%;opacity:.35;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:56px;padding-top:96px;padding-bottom:96px;align-items:end}
+.tag{display:flex;align-items:center;gap:14px;font:italic 600 17px var(--display);color:var(--gold);margin-bottom:24px}
+.tag::before{content:"";height:1px;width:44px;background:var(--gold)}
+h1{font:800 clamp(36px,5.6vw,68px)/1.08 var(--display);letter-spacing:-.03em}
+.hero p.lead{font-size:20px;color:#cfc9ee;max-width:34em;margin:26px 0 38px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.feat{background:rgba(255,255,255,.07);border:1px solid var(--lined);backdrop-filter:blur(6px);padding:30px}
+.feat small{color:var(--gold);font-weight:700;font-size:13px}
+.feat h3{font:800 24px/1.25 var(--display);margin:8px 0 10px}
+.feat p{color:#cfc9ee;font-size:16px;margin-bottom:18px}
+.feat a{font-weight:700;color:var(--gold)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px}}
+
+/* sections */
+section{padding:96px 0}
+.paper{background:var(--paper)}
+.dark{background:var(--bg2);color:#fff}
+.eyebrow{font:700 13px var(--display);color:var(--violet);margin-bottom:12px}
+h2{font:800 clamp(28px,3.8vw,44px)/1.12 var(--display);letter-spacing:-.025em;max-width:20em}
+.sub{color:var(--muted);max-width:38em;margin-top:14px}
+.head{margin-bottom:52px}
+.dark .sub{color:var(--mutedd)}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;border:1px solid var(--line);padding:34px 30px 30px;display:flex;flex-direction:column;transition:.25s;border-top:4px solid var(--violet)}
+.card:hover{box-shadow:0 18px 40px rgba(76,29,149,.14);transform:translateY(-4px)}
+.card svg{width:36px;height:36px;stroke:var(--violet);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:20px}
+.card h3{font:600 20px/1.3 var(--display);margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px;margin-bottom:20px;flex:1}
+.card a{font-weight:700;color:var(--violet-d);font-size:15px}
+@media(max-width:960px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid3{grid-template-columns:1fr}}
+
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--lined);border-left:1px solid var(--lined)}
+.ind a{padding:34px 26px;border-right:1px solid var(--lined);border-bottom:1px solid var(--lined);font:600 19px/1.3 var(--display);display:flex;justify-content:space-between;align-items:flex-end;min-height:128px;transition:.2s}
+.ind a:hover{background:var(--violet)}
+.ind a::after{content:"\2192";color:var(--gold);font-size:22px}
+@media(max-width:900px){.ind{grid-template-columns:1fr 1fr}}
+
+/* product split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}}
+.shot{background:linear-gradient(145deg,var(--violet-d),var(--bg));padding:28px;border-radius:6px;color:#fff;box-shadow:0 30px 60px rgba(76,29,149,.3)}
+.shot .row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--lined);font-size:15px}
+.shot .row:last-child{border:0}.shot .row b{color:var(--gold)}
+.shot h4{font:600 15px var(--display);color:var(--violet-l);margin-bottom:8px}
+.ticks li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line)}
+.ticks li::before{content:"";position:absolute;left:4px;top:19px;width:12px;height:7px;border-left:2.5px solid var(--violet);border-bottom:2.5px solid var(--violet);transform:rotate(-45deg)}
+
+/* stories */
+.story{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line)}
+.story .img{height:170px;background:linear-gradient(135deg,var(--violet-d),var(--violet) 60%,var(--gold));position:relative;overflow:hidden}
+.story:nth-child(2) .img{background:linear-gradient(135deg,var(--bg),var(--violet-d) 70%,var(--violet-l))}
+.story:nth-child(3) .img{background:linear-gradient(135deg,var(--violet),var(--bg) 80%)}
+.story .img::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 38px)}
+.story div.b{padding:26px}
+.story small{font-weight:700;color:var(--violet);font-size:13px}
+.story h3{font:600 19px/1.35 var(--display);margin:8px 0 14px}
+
+/* about + careers */
+.values{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.values li{padding:22px 0;border-top:1px solid var(--lined)}
+.values strong{display:block;font:600 18px var(--display);margin-bottom:4px}
+.values span{color:var(--mutedd);font-size:16px}
+@media(max-width:700px){.values{grid-template-columns:1fr}}
+.band{background:var(--violet);color:#fff;padding:64px 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.band h2{max-width:22em;font-size:clamp(26px,3vw,36px)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+@media(max-width:860px){.contact{grid-template-columns:1fr;gap:36px}}
+.info p{color:var(--muted);margin-top:18px}.info strong{display:block;color:var(--ink)}
+form{display:grid;gap:16px}
+label{font-size:14px;font-weight:500;color:var(--muted);display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--ink);background:#fff;border:1px solid #cfc8ea;padding:13px 14px;width:100%}
+input:focus,textarea:focus{border-color:var(--violet);outline:none}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-self:start}
+
+/* footer */
+footer{background:var(--bg);color:var(--mutedd);padding:64px 0 28px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:36px}
+footer h5{font:700 14px var(--display);color:#fff;margin-bottom:14px}
+footer li{margin:9px 0}footer a:hover{color:var(--gold)}
+.legal{border-top:1px solid var(--lined);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="util"><div class="wrap"><a href="#careers">Careers</a><a href="#insights">Insights</a><a href="#contact">Contact us</a><span>India (English)</span></div></div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#top" class="logo" aria-label="Kavidhan Global Solutions home"><b>KDGS</b><i>KAVIDHAN GLOBAL SOLUTIONS</i></a>
+      <button class="tog" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul class="menu" id="menu">
+        <li><a href="#services">Services</a>
+          <div class="mega"><div class="wrap">
+            <div><h4>Services</h4><p>Strategy, engineering and support for digital products and connected systems.</p></div>
+            <ul><li><a href="#services">Software &amp; app development</a></li><li><a href="#services">AI &amp; face recognition</a></li><li><a href="#services">IoT &amp; building automation</a></li><li><a href="#services">Cloud &amp; data migration</a></li><li><a href="#services">GPS &amp; asset tracking</a></li><li><a href="#services">Managed support</a></li></ul>
+          </div></div></li>
+        <li><a href="#industries">Industries</a>
+          <div class="mega"><div class="wrap">
+            <div><h4>Industries</h4><p>Domain-aware solutions built around how each sector works.</p></div>
+            <ul><li><a href="#industries">Manufacturing</a></li><li><a href="#industries">Real estate &amp; facilities</a></li><li><a href="#industries">Construction &amp; MEP</a></li><li><a href="#industries">Education</a></li><li><a href="#industries">Healthcare</a></li><li><a href="#industries">Retail &amp; services</a></li></ul>
+          </div></div></li>
+        <li><a href="#products">Products</a>
+          <div class="mega"><div class="wrap">
+            <div><h4>Products</h4><p>Ready-to-deploy platforms, customised to your organisation.</p></div>
+            <ul><li><a href="#products">Kavidhan People360</a></li><li><a href="#products">Attendance &amp; payroll</a></li><li><a href="#products">Access control</a></li><li><a href="#products">Tools tracker</a></li></ul>
+          </div></div></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#careers">Careers</a></li>
+      </ul>
+      <a href="#contact" class="btn vio nav-cta">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <svg viewBox="0 0 500 600" fill="none" stroke="#a78bfa" stroke-width="1.5" aria-hidden="true"><path d="M500 60H380l-40 40v80l-50 50H160"/><path d="M500 200h-90l-30 30v120l-60 60H220v90"/><path d="M500 330h-40l-30 30v150h-80l-40 40H250"/><circle cx="160" cy="230" r="6"/><circle cx="220" cy="510" r="6"/><circle cx="380" cy="100" r="6"/><circle cx="340" cy="180" r="6"/></svg>
+    <div class="wrap">
+      <div>
+        <p class="tag">Your Technology Partner</p>
+        <h1>Smart digital solutions that simplify work and create lasting value.</h1>
+        <p class="lead">We solve real-world problems for people and businesses, from workforce platforms to AI and connected buildings.</p>
+        <div class="cta"><a href="#services" class="btn gold">Explore our services</a><a href="#contact" class="btn ghost">Talk to an expert</a></div>
+      </div>
+      <aside class="feat">
+        <small>FEATURED</small>
+        <h3>Kavidhan People360</h3>
+        <p>Attendance, biometrics, leave and payroll on one multi-tenant platform.</p>
+        <a href="#products" class="arrow">Learn more</a>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services" class="paper">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow">Services</p><h2>Technology built for real-world problems</h2><p class="sub">One team across strategy, design, engineering and support.</p></div>
+      <div class="grid3">
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><h3>Software &amp; app development</h3><p>Web, Flutter and React Native applications with secure APIs and clean admin dashboards.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M4 8V5h3M17 5h3v3M20 16v3h-3M7 19H4v-3"/><circle cx="12" cy="11" r="3"/><path d="M7 17c1-2.2 2.8-3 5-3s4 .8 5 3"/></svg><h3>AI &amp; face recognition</h3><p>Biometric identity verification and attendance that plugs into the devices you already own.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M3 21V9l7-5v17M10 21V12l11 3v6"/><path d="M6 11h1M6 14h1M6 17h1M14 17h1M17 18h1"/></svg><h3>IoT &amp; building automation</h3><p>BACnet and Modbus integration that brings HVAC and access control into one monitored app.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 010-9 6 6 0 0111.5 1.5A3.8 3.8 0 0118 18z"/></svg><h3>Cloud &amp; data migration</h3><p>Move databases and platforms to the cloud, including MySQL to Azure SQL, without disrupting operations.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>GPS &amp; asset tracking</h3><p>Live location tracking for tools, equipment and field teams.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+        <article class="card"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Managed support</h3><p>Monitoring, updates and security so your systems keep performing after launch.</p><a href="#contact" class="arrow">Discuss your project</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="dark">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow" style="color:var(--gold)">Industries</p><h2>Deep understanding of how your sector works</h2></div>
+      <div class="ind">
+        <a href="#contact">Manufacturing</a><a href="#contact">Real estate &amp; facilities</a><a href="#contact">Construction &amp; MEP</a><a href="#contact">Education</a>
+        <a href="#contact">Healthcare</a><a href="#contact">Retail &amp; services</a><a href="#contact">Hospitality</a><a href="#contact">Public sector</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Products</p>
+        <h2>Kavidhan People360</h2>
+        <p class="sub">A complete people-management suite that scales from one site to many organisations.</p>
+        <ul class="ticks" style="margin:26px 0 32px"><li>Face-recognition and biometric attendance</li><li>Leave, payroll and payslip automation</li><li>Multi-tenant admin with role-based access</li><li>Web admin panel and mobile apps</li></ul>
+        <a href="#contact" class="btn vio">Request a demo</a>
+      </div>
+      <div class="shot" aria-hidden="true">
+        <h4>People360 dashboard (illustration)</h4>
+        <div class="row"><span>Attendance today</span><b>Live</b></div>
+        <div class="row"><span>Leave requests</span><b>Approvals</b></div>
+        <div class="row"><span>Payroll cycle</span><b>Automated</b></div>
+        <div class="row"><span>Biometric devices</span><b>Connected</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="insights" class="paper">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow">Insights</p><h2>Ideas and stories from our work</h2><p class="sub">Sample headings: replace with your own case studies and articles.</p></div>
+      <div class="grid3">
+        <a href="#contact" class="story"><div class="img"></div><div class="b"><small>CASE STUDY</small><h3>Replacing manual attendance with face recognition</h3><span class="arrow" style="font-weight:700;color:var(--violet-d)">Read story</span></div></a>
+        <a href="#contact" class="story"><div class="img"></div><div class="b"><small>ARTICLE</small><h3>Bringing HVAC and access control into one app</h3><span class="arrow" style="font-weight:700;color:var(--violet-d)">Read article</span></div></a>
+        <a href="#contact" class="story"><div class="img"></div><div class="b"><small>ARTICLE</small><h3>Planning a safe database migration to Azure SQL</h3><span class="arrow" style="font-weight:700;color:var(--violet-d)">Read article</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="dark">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow" style="color:var(--gold)">About us</p><h2>Technology that simplifies work and enhances lives</h2><p class="sub">Kavidhan Global Solutions is a technology partner for organisations that want practical digital tools, not complicated ones. We start with the real problem, then build something people enjoy using.</p></div>
+      <ul class="values">
+        <li><strong>Simplify work</strong><span>Fewer steps, clearer screens, less paperwork.</span></li>
+        <li><strong>Enhance lives</strong><span>Software that respects the people who use it daily.</span></li>
+        <li><strong>Create lasting value</strong><span>Secure, scalable systems we stay and support.</span></li>
+        <li><strong>Partner, not vendor</strong><span>We work as an extension of your team.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="band" id="careers"><div class="wrap"><h2>Build the next generation of digital solutions with us</h2><a href="mailto:careers@kavidhan.com" class="btn gold">Explore careers</a></div></div>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div class="info">
+        <p class="eyebrow">Contact us</p>
+        <h2>Let’s solve your next problem</h2>
+        <p>Tell us what you need. We’ll reply within one working day.</p>
+        <p><strong>Email</strong>info@kavidhan.com</p>
+        <p><strong>Phone</strong>+91 00000 00000</p>
+        <p><strong>Address</strong>Your office address, City, Tamil Nadu, India</p>
+      </div>
+      <form action="mailto:info@kavidhan.com" method="post" enctype="text/plain">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Work email<input type="email" name="email" required autocomplete="email"></label>
+        <label>How can we help?<textarea name="message" required></textarea></label>
+        <button class="btn vio" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="#top" class="logo"><b>KDGS</b><i style="color:#a78bfa">KAVIDHAN GLOBAL SOLUTIONS</i></a><p style="margin-top:16px;max-width:22em">Your Technology Partner. Smart digital solutions for people and businesses.</p></div>
+      <div><h5>Services</h5><ul><li><a href="#services">Software &amp; apps</a></li><li><a href="#services">AI &amp; biometrics</a></li><li><a href="#services">IoT &amp; automation</a></li><li><a href="#services">Cloud &amp; data</a></li></ul></div>
+      <div><h5>Industries</h5><ul><li><a href="#industries">Manufacturing</a></li><li><a href="#industries">Real estate</a></li><li><a href="#industries">Construction</a></li><li><a href="#industries">Education</a></li></ul></div>
+      <div><h5>Products</h5><ul><li><a href="#products">People360</a></li><li><a href="#products">Attendance</a></li><li><a href="#products">Access control</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#about">About us</a></li><li><a href="#careers">Careers</a></li><li><a href="#insights">Insights</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="y">2026</span> Kavidhan Global Solutions. All rights reserved.</span><span><a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Terms</a></span></div>
+  </div>
+</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+var t=document.querySelector('.tog'),m=document.getElementById('menu');
+t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>
